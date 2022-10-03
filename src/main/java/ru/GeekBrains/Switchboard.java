@@ -1,20 +1,21 @@
 package ru.GeekBrains;
 
-public class Switchboard {
-    private Boolean work;
 
-    public void start () {
-        this.work = true;
+public class Switchboard {
+    private State work;
+
+    protected void start () {
+        this.work = State.ON;
         System.out.println("Началась подача электричества");
     }
 
-    public void stop () {
-        this.work = false;
+    protected void stop () {
+        this.work = State.OFF;
         System.out.println("Подача электричества закончилась");
     }
 
-    public Boolean getWork() {
-        return work;
+    public boolean isWork() {
+        return this.work == State.ON;
     }
 
 
