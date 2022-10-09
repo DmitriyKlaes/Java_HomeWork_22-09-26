@@ -1,10 +1,5 @@
 package ru.GeekBrains.equipment;
 
-import ru.GeekBrains.equipment.Base;
-import ru.GeekBrains.equipment.Collector;
-import ru.GeekBrains.equipment.ControlPanel;
-import ru.GeekBrains.equipment.Switchboard;
-
 public class DoubleHeadSaw {
 
     private Base base;
