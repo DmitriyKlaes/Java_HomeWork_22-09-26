@@ -1,22 +1,23 @@
-package ru.GeekBrains;
+package ru.GeekBrains.equipment;
 
 
-public class Switchboard {
+public class Switchboard implements Work {
     private State work;
 
-    protected void start () {
+    @Override
+    public boolean workCheck() {
+        return this.work == State.ON;
+    }
+
+    @Override
+    public void switchOn() {
         this.work = State.ON;
         System.out.println("Началась подача электричества");
     }
 
-    protected void stop () {
+    @Override
+    public void switchOff() {
         this.work = State.OFF;
         System.out.println("Подача электричества закончилась");
     }
-
-    public boolean isWork() {
-        return this.work == State.ON;
-    }
-
-
 }
