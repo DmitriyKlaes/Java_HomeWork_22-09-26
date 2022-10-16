@@ -1,6 +1,6 @@
 package ru.GeekBrains.equipment;
 
-public class VerticalBind extends Bind{
+public class VerticalBind extends Bind {
 
     @Override
     protected void fixationStart(String message) {

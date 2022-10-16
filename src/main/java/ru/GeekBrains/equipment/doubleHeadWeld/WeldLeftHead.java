@@ -1,11 +1,13 @@
-package ru.GeekBrains.equipment;
+package ru.GeekBrains.equipment.doubleHeadWeld;
 
-public class LeftHead extends Head {
+import ru.GeekBrains.equipment.State;
+
+public class WeldLeftHead extends WeldHead {
     private State work;
 
     @Override
-    protected void cutting() {
-        System.out.println("Распил слева произведен");
+    protected void welding() {
+        System.out.println("Сварка слева произведена");
     }
 
     @Override

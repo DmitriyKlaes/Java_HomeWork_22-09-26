@@ -1,4 +1,6 @@
-package ru.GeekBrains.equipment;
+package ru.GeekBrains.equipment.doubleHeadSaw;
+
+import ru.GeekBrains.equipment.Bind;
 
 public class HorizontalBind extends Bind {
 

@@ -1,7 +1,6 @@
 package ru.GeekBrains.equipment;
 
-
-public class Switchboard implements Work {
+public abstract class SwitchBoard implements Work {
     private State work;
 
     @Override

@@ -1,6 +1,8 @@
-package ru.GeekBrains.equipment;
+package ru.GeekBrains.equipment.doubleHeadSaw;
 
-public class RightHead extends Head {
+import ru.GeekBrains.equipment.State;
+
+public class SawRightHead extends SawHead {
     private State work;
 
     @Override

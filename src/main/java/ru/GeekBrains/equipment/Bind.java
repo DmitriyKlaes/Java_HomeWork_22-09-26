@@ -3,17 +3,17 @@ package ru.GeekBrains.equipment;
 public abstract class Bind {
     private Boolean fix;
 
-    protected void fixateUp(String message) {
+    public void fixateUp(String message) {
         this.fix = true;
         fixationStart(message);
     }
 
-    protected void fixateDown(String message) {
+    public void fixateDown(String message) {
         this.fix = false;
         fixationStop(message);
     }
 
-    protected boolean isFix() {
+    public boolean isFix() {
         return this.fix;
     }
 

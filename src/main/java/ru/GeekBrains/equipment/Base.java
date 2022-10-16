@@ -1,19 +1,7 @@
 package ru.GeekBrains.equipment;
 
-public class Base {
-    private LeftHead headLeft;
-    private RightHead headRight;
+public abstract class Base<T extends Head> {
 
-    protected Base() {
-        this.headLeft = new LeftHead();
-        this.headRight = new RightHead();
-    }
-
-    protected LeftHead getHeadLeft() {
-        return headLeft;
-    }
-
-    protected RightHead getHeadRight() {
-        return headRight;
-    }
+    protected abstract T getHeadLeft();
+    protected abstract T getHeadRight();
 }
